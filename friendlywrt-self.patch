@@ -1,7 +1,8 @@
- package/libs/libjson-c/Makefile | 1 +
- package/libs/libpcap/Makefile   | 3 ++-
- package/libs/libubox/Makefile   | 2 +-
- 3 files changed, 4 insertions(+), 2 deletions(-)
+ package/libs/libjson-c/Makefile         | 1 +
+ package/libs/libpcap/Makefile           | 3 ++-
+ package/libs/libubox/Makefile           | 2 +-
+ package/network/utils/iproute2/Makefile | 2 +-
+ 4 files changed, 5 insertions(+), 3 deletions(-)
 
 diff --git a/package/libs/libjson-c/Makefile b/package/libs/libjson-c/Makefile
 index 746a147..522de06 100644
@@ -48,4 +49,17 @@ index 97a4599..49bf583 100644
 +  ABI_VERSION:=20191228
    DEPENDS:=
  endef
+
+diff --git a/package/network/utils/iproute2/Makefile b/package/network/utils/iproute2/Makefile
+index 8617a8e..cb97898 100644
+--- a/package/network/utils/iproute2/Makefile
++++ b/package/network/utils/iproute2/Makefile
+@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
  
+ PKG_NAME:=iproute2
+ PKG_VERSION:=5.0.0
+-PKG_RELEASE:=1
++PKG_RELEASE:=2.1
+ 
+ PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
+ PKG_SOURCE_URL:=@KERNEL/linux/utils/net/iproute2
