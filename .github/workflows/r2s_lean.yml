@@ -7,6 +7,8 @@ on:
       - '.github/workflows/r2s_lean.yml'
   schedule:
     - cron: '10 07 * * *'
+  workflow_dispatch:
+    ref: refs/heads/master
 
 jobs:
 
